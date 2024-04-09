@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
+    "export": "next build && next export",
+    "start": "next start",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -21,5 +23,9 @@
     "tabWidth": 2,
     "trailingComma": "none",
     "semi": false
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "husky": "^9.0.11"
   }
 }
