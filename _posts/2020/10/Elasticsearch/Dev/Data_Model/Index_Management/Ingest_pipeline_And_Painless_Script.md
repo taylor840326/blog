@@ -1,2 +1,0 @@
-## Ingest Pipeline && Painless Script
------
